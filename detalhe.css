@@ -1,0 +1,116 @@
+header {
+    width: 100%;
+    background: #5fc1ae;
+}
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.Menu .Logo {
+    height: 100px;
+}
+.Menu p {
+    font-family: 'Dosis', sans-serif;   
+    font-size: 30px;
+    margin-left: 30px;
+}
+.Menu .wrap {
+    color: white;
+    margin: 5px;
+    justify-content: right;
+}
+.Menu .cariinho {
+    width: 50px;
+    height: 50px;
+}
+#barra {
+    background-color:white;
+    border-radius:10px;
+    float: right;
+    margin-right: 50px;
+    align-items: center;
+    border: 10px;
+    display: flex;
+}
+#txtBusca {
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+#btnBusca {
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background: #fbbf37;
+}
+#divBusca img {
+    float:right; 
+}
+.animacao{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid white;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+.animacao span{
+    position:static ;
+    z-index: 2;
+}
+.animacao:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fbbf37;
+    transition: all .35s;
+}
+.animacao:hover{
+    color: #fff;
+}
+.animacao:hover:after{
+    width: 100%;
+}
+.pesquisa {
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center; */
+}
+.dados {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
+.dados h3 {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.centro {
+    margin: auto 0;
+}

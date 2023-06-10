@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    width: 100%;
+    background: #5fc1ae;
+}
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.Menu .Logo {
+    height: 100px;
+}
+.Menu p {
+    font-family: 'Dosis', sans-serif;   
+    font-size: 30px;
+    margin-left: 30px;
+}
+.Menu .wrap {
+    color: white;
+    margin: 5px;
+    justify-content: right;
+}
+.Menu .cariinho {
+    width: 50px;
+    height: 50px;
+}
+#barra {
+    background-color:white;
+    border-radius:10px;
+    float: right;
+    margin-right: 50px;
+    align-items: center;
+    border: 10px;
+    display: flex;
+}
+#txtBusca {
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+#btnBusca {
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background: #fbbf37;
+}
+#divBusca img {
+    float:right; 
+}
+.animacao{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid white;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+.animacao span{
+    position:static ;
+    z-index: 2;
+}
+.animacao:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fbbf37;
+    transition: all .35s;
+}
+.animacao:hover{
+    color: #fff;
+}
+.animacao:hover:after{
+    width: 100%;
+}
+.pesquisa {
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center; */
+}
+.carrossel {
+    display: flex;   
+}
+.carousel-control-prev-icon {
+    background-color: #fbbf37;
+}
+.carousel-control-next-icon {
+    background-color: #fbbf37;
+}
+.box {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .box select {
+    background-color: #5fc1ae;
+    color: black;
+    padding: 12px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 10px;
+}
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.box select option {
+    padding: 30px;
+}
+.box input {
+    background-color: #5fc1ae;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.box button {
+    background-color: #5fc1ae;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.destaque {
+    display: flex;
+    gap: 40px;
+    margin: 50px 0 100px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: "destaque";
+    grid-column: destaque;
+}
+.destaque img {
+    width: 350px;
+    height: 350px;
+    border: 2px dashed black;
+    border-radius: 40px;
+}
+.produto {
+    display: flex;
+}
+
+.produto img {
+    width: 40%;
+}
+
+.ver {
+    background-color: #5fc1ae;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 50px auto;
+}
+.final {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px !important;
+}
+.rodape img {
+    width: 90px;
+}
+.rodape {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.rodape img {
+    width: 90px;
+}
+.rodape h4 {
+    font-size: 17px;
+}
+.rodape .social {
+    width: 30px;
+}
+.rodape .email {
+    display: flex;
+    font-size: 18px;
+}
+.rodape .email img {
+    width: auto;
+}
+.rodape .tel {
+    width: auto;
+}
+.centro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #fbbf37;
+}
+.dados {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.dados h3 {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="API.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>eComercy</title>
+</head>
+<body>
+    
+    <div class="dados">
+        <h3>
+            Nome: Maria Eduarda Pinto Martins
+        </h3>
+        <h3>
+            Curso: Ciência da Computação
+        </h3>
+        <h3>
+            Matrícula: 805272
+        </h3>
+    </div>  
+    <header>
+        <div class="Menu">
+            <img src="/img/imagens-ecommerce.png" class="Logo">
+            <p>
+                Bem Vindo
+            </p>
+            <div id="barra">
+                <img src="/img/icons8-pesquisar-mais-24 (1).png" alt="Buscar...">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                <button id="btnBusca">Buscar</button>
+            </div>
+            <a href="#" class="wrap animacao">
+                <span></span>
+                Registrar
+            </a>
+            <a href="#" class="wrap animacao">
+                <span></span>
+                Pedidos
+            </a>
+            <img src="img/carrinhow.png" class="cariinho">
+        </div>
+    </header>
+    <div class="carrossel row ">
+        <div class="pesquisa conteiner col-md-6">
+            <h4>Pesquisa rápida - Escolha os produtos</h4>
+            <p>Ache o produto certo</p>
+            <div class="box" id="filtro">
+
+                <button onclick="cat()">Pesquisar</button>
+            </div>   
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade conteiner col-md-6">
+            <div class="carousel-inner">
+                <div class="carousel-item active  d-flex justify-content-center">
+                    <img src="http://assets.myntassets.com/v1/images/style/properties/Nike-Men-Blue-T20-Indian-Cricket-Jersey_12975d4d66eefad43ba02dea5787cce4_images.jpg" class="d-block w-50">
+                </div>
+                <div class="carousel-item  d-flex justify-content-center">
+                    <img src="http://assets.myntassets.com/v1/images/style/properties/578e4ab92efcec9a6f64e868b0fa9dec_images.jpg" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item  d-flex justify-content-center">
+                    <img src="http://assets.myntassets.com/v1/images/style/properties/b4cceb82a693f46ac163e0c8fce3a387_images.jpg" class="d-block w-50" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="destaque">
+        <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"> 
+        <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg">
+        <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg">
+    </div>
+    <div class="row container-fluid text-center d-flex">
+        <div class="Lateral col-xl-3">
+            <div class="produtos">
+                <h4>Itens mais relevantes</h4>
+                <div class="produto">
+                    <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg">
+                    <span class="inf">
+                      <p>Mens Casual Slim Fit</p>
+                      <div class="avaliacao">3.9⭐</div>
+                        <strong>15.99</strong>
+                    </span>
+                </div>
+                <hr>
+                <div class="produto">
+                    <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg">
+                    <span class="inf">
+                        <p>Pierced Owl Rose Gold Plated Stainless Steel Double</p>
+                        <div class="avaliacao">1.9⭐</div>
+                        <strong>10.99</strong>
+                    </span>
+                </div>
+                <hr>
+                <div class="produto">
+                    <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg">
+                    <span class="inf">
+                        <p>SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</p>
+                        <div class="avaliacao">2.9⭐</div>
+                        <strong>109</strong>
+                    </span>
+                </div>
+                <button class="ver">Ver mais</button>
+            </div>
+        </div>
+        <div class="row align-items-center col-lg-12 col-xl-9" id="itens">
+        </div>
+    </div>
+    <section class="final row">
+        <div class="rodape col-sm-6 col-md-3">
+            <h4>Métodos de pagamento</h4> 
+            <div class="bancos">
+                <img src="img/BandeirasCartoesBancos.png">
+            </div>
+        </div>
+        <div class="rodape col-sm-6 col-md-3">
+            <h4>Links rápidos</h4>
+            <a href="https://translate.google.com.br/?hl=pt-BR&sl=en&tl=pt&text=help%0A&op=translate" target="_blank">Help</a>
+            <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Política de Privacidade</a>
+            <a href="https://help.shopee.com.br/portal/article/76320-[Cancelamento-de-pedidos]-Como-vou-receber-meu-reembolso-por-pedidos-cancelados%3F">Cancelamento e reembolso</a>
+            <a href="https://pt.wikipedia.org/wiki/FAQ">FAQ</a>
+            <a href="https://pt.wikipedia.org/wiki/Código_de_Defesa_do_Consumidor">Código do Consumidor</a>
+            <a href="https://www.reclameaqui.com.br/reclamar/">Reclame Aqui</a>
+        </div>
+        <div class="rodape col-sm-6 col-md-3">
+            <h4>Mantendo conectados</h4>
+            <div>
+                <a href="https://www.facebook.com/groups/ElonMusk/?locale=pt_BR" target="_blank"><img class="social" src="img/icons8-facebook-30.png"></a>
+                <a href="https://twitter.com/elonmusk" target="_blank"><img class="social" src="img/icons8-twitter-24.png"></a>
+                <a href="https://www.instagram.com/maryedit2/" target="_blank"><img class="social" src="img/icons8-instagram-24.png"></a>
+            </div>
+        </div>
+        <div class="rodape col-sm-6 col-md-3">
+            <h4>Fale com a gente</h4>
+            <p>Núemro: Tal</p>
+            <p>Endereço: Tal</p>
+            <p>Bairro: Tal</p>
+            <div class="email">
+                <img src="img/icons8-mensagem-preenchida-24.png">
+                <a href="https://pt.wikipedia.org/wiki/Gmail" target="_blank">vocaloid@gmail.com</a>
+            </div>
+            <p><img class="tel" src="img/icons8-telefone-24.png">40028922</p>
+        </div> 
+        
+    </section>
+    <footer>&copy; 2004-2018 vocaloid.com</footer>
+    <script src="API.js">
+    </script>
+    
+</body>
+</html>
